@@ -67,6 +67,39 @@ print(globalValue)  # 42
 oreoreFunc()        # Ore!!
 """
 
+# 別名定義
+
+"""
+
+import another as an
+an.hello("Advent Calender")
+an.goodbye( an.year )
+
+# 注意: importされるファイルに実行コマンド(トップレベルのコマンド)が描かれていると、
+# インポートした時点でそれが実行される。
+# Swiftと違って main.swift以外にも実行命令が書け、実際にコンパイルエラーにならず実行されてしまう。
+
+# 防ぐには、 another.py (インポートされるファイル内)で
+
+if __name__ == '__main__':
+    print("Hello from another.py")
+
+# と、if __name__ == '__main__': の中で実行コマンドを書けば良い。
+
+
+# どこからインポートされているのかを確認したければ、
+
+import Special
+print( Special.__path__ )
+
+で見れる。
+
+
+"""
+
+
+
+
 
 # 制御構造
 
@@ -87,7 +120,7 @@ elif value1 == "Python" or value2 == "Swift":
 """
 
 # ついにこれができる言語に初めて会ってしまった...
-
+"""
 x = 42
 if 40 < x < 44:
 	print("mazika!!!")
@@ -96,7 +129,7 @@ if 40 < x < 44:
 
 y = "hello" if False else "byebye"
 print(y)
-
+"""
 
 ## for文
 
@@ -183,6 +216,7 @@ elif myStr == "c":
 # (__eq__が定義されてない場合は、最上位のobjectクラスの__eq__の結果は利用するが、
 # これは is と同じく、"id" を比較している)
 
+"""
 class TestClass:
 	pass
 
@@ -207,6 +241,7 @@ c1 = TestClass()
 
 print(c1 == None)  # True(ヤバ...)
 print(c1 is None)  # False(よかった...)
+"""
 
 
 ## 文字列オブジェクト
@@ -251,6 +286,27 @@ str.startswith("")  # Boolで返る
 
 str.upper()
 str.lower()
+"""
+
+### 文字列 + 数字の足し算は不可
+
+"""
+stock = 13
+# だめ。TypeError
+# "stock:" + stock
+
+
+stock = 13
+print("stock:" + str(stock))
+
+# 地味に型に厳格なのな...
+"""
+
+### format
+
+"""
+stock = 42
+print('stock: {:d}'.format(stock))
 """
 
 
@@ -370,6 +426,12 @@ for key, value in myDict.items():
 print("Year" in myDict)   # True
 print("Years" in myDict)  # False
 """
+
+## 辞書の辞書
+
+# { "coca cola": {"total": 320, "count": 2}, "coffee": {"total": 360, "count": 3} }
+
+
 
 ## セット
 
