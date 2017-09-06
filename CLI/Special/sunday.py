@@ -1,5 +1,5 @@
 
 filename = "sunday.py"
 
-def hello(name):
-    print("Hello {0}. From sunday.py".format(name))
+def hello(name, email):
+    print("Hello {100} {200}. From sunday.py".format(name, email))
