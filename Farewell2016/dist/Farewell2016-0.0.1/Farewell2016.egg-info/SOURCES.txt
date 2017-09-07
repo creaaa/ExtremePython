@@ -1,7 +1,0 @@
-MANIFEST.in
-README.rst
-setup.py
-Farewell2016.egg-info/PKG-INFO
-Farewell2016.egg-info/SOURCES.txt
-Farewell2016.egg-info/dependency_links.txt
-Farewell2016.egg-info/top_level.txt
