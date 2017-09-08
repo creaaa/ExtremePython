@@ -13,7 +13,7 @@ setup(
     license='MIT',
     keywords='utilities',
     
-    packages=['UltimatePkg'],
+    packages=['UltimatePkg'], # もちろん、pip3 install -e . でPCグローバルにライブラリ化したら、ここで書いたパッケージも同時にグローバルに入る
     install_requires=['termcolor'],
     
     classifiers=[
