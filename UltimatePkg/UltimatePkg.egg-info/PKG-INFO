@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: UltimatePkg
+Version: 0.1
+Summary: Ultimate packages
+Home-page: UNKNOWN
+Author: crea
+Author-email: masataka0504@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: utilities
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6

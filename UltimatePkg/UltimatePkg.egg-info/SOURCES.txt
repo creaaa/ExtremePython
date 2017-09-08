@@ -1,0 +1,7 @@
+setup.py
+UltimatePkg/Mycolor.py
+UltimatePkg.egg-info/PKG-INFO
+UltimatePkg.egg-info/SOURCES.txt
+UltimatePkg.egg-info/dependency_links.txt
+UltimatePkg.egg-info/requires.txt
+UltimatePkg.egg-info/top_level.txt
